@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Viyogi Tech Solutions
+        </title>
+        {% block link %}
+        {% endblock link%}
+    </head>
+    <body>
+        <header style="background-color: rgb(120, 43, 184); height: 85px; z-index:1; ">
+            <a href="{{url_for('main')}}"><h2 style="color: cornsilk;margin-left: 50px; padding:10px;height: 30px; width:220px;float:left;text-decoration: none;">Viyogi <span>/\\/</span> Enterprise</h2></a>
+            <table style="float:right;padding:20px; color: cornsilk;margin-right:60px;">
+                <tr style="width: 220px;">
+                    <td style="padding:10px;width: 60px;display:block;float: left; text-align: center;"><a href="{{url_for('main')}}" style="color: cornsilk;padding:5px;text-decoration: none; text-align: center;">Home</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;text-align: center;"><a href="{{url_for('products')}}" style="color: cornsilk;padding:5px;text-decoration: none;text-align: center;">Products</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;text-align: center;"><a href="{{url_for('projects')}}" style="color: cornsilk;padding:5px;text-decoration: none;text-align: center;">Project</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;text-align: center;"><a href="{{url_for('cont')}}" style="color: cornsilk;padding:5px;text-decoration: none;text-align: center;">Contact</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;text-align: center;"><a href="{{url_for('logpage')}}" style="color: cornsilk;padding:5px;text-decoration: none;text-align: center;">Admin</a></td>
+                </tr>
+            </table>
+        </header>
+        <hr>
+        {% block contents %}
+        {% endblock contents%}
+        <hr>
+        <footer>
+            <div style="background-color: rgb(120, 43, 184); height: 60px;">
+                <a href="{{url_for('main')}}"><h3 style="color: cornsilk;margin-left: 20px;width:170px; font: size 12px; float:left;">Viyogi /\\/</span> Enterprise</h3></a>
+                <h4 style="color: cornsilk;margin-left: 20px;width:170px; font: size 12px; float:right;">&#169; Copyright 2021</h4>
+            </div>
+            <div class="foot-table" style="width: max-content;">
+                <table style="margin-left: 20px;">
+                    <tr>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Machine Learning</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 10px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Deep Learning</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Artificial intelligence</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Software Development</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Android Development</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Web Development</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Quick Boost</b></a></td>
+                        <td style="padding: 10px; margin-left:15px ; margin-right: 15px;"><a href="#" style="color: rgb(34, 31, 22);text-decoration: none;"><b>Research & Innovation</b></a></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </body>
+    {% block javascript%}
+    {% endblock javascript%}
+</html>

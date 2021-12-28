@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block link%}
+{% endblock link %}
+
+{% block contents %}
+<div style="margin:100px;">
+ <h2 style="text-align: center;">Work In Progress</h2>
+ <br>
+ <h3 style="text-align: center;"> Redirecting in
+  <span id="timer">5 Seconds</span>
+ </h3>
+</div>
+{% endblock contents %}
+{% block javascript%}
+<script>
+ var count=5;
+ setTimeout(function(){
+  window.location.href = "http://127.0.0.1:5000/";
+  }, 5000);
+</script>
+{% endblock javascript%}

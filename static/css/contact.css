@@ -1,0 +1,16 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main-form{
+ margin-top: 20px; 
+ margin-bottom: 20px;
+}
+.main-form input{
+ height: 25px; 
+ width: 300px; 
+ text-decoration: none;
+ margin-left: 20px;
+ margin-right: 20px;
+}

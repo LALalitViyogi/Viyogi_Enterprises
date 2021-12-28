@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+
+{% block link%}
+{% endblock link %}
+
+
+{% block contents %}
+<br>
+<div style="margin-left:70px;">
+
+{% set image_num=6%}
+{% set row_count=3%}
+
+{# only image_num products will be on main page#}
+{% for j in range(image_num)%}
+ 	{% if image_num !=0%}
+  	<a href={{links[len[j]]}}>
+			<img src="{{url_for('static', filename='img/'+imgs[len[j]])}}" 
+			style="height: 170px; margin-left:20px;margin-right:20px; width: 350px; border-style:solid; border-width:2px;border-color:rgb(95, 29, 29); ">
+			</a>
+			{%if (j+1)%row_count==0 %}
+			<br><br>
+			{%endif%}	
+		{% set image_num= image_num-1%}
+	 {%endif%}
+{% endfor %}
+
+</div>
+<br>
+
+{% endblock contents %}

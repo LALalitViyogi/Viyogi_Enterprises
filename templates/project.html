@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block link%}
+{% endblock link %}
+
+{% block contents %}
+
+<div style="margin:20px;">
+ <h2 style="text-align: center; color: rgba(128, 96, 96, 0.918);">Active Projects</h2>
+</div>
+<br>
+{% set image_num=4%}
+{% set low_screen = false%}
+<div style="margin-left:40px; margin-right:40px; display:flex;">
+ {% for j in range(image_num)%}
+ <a href={{links[len[j]]}} style="text-decoration: none;border-style:solid;margin:5px; border-width:2px;border-color:rgb(95, 29, 29);border-radius:20px;background-color:rgb({{colors[len[j]]}});">
+  <h3 style="text-align: center; margin-top:25px; font-size:23px; color:cornsilk;">{{products[len[j]]}}</h3>
+  <img src="{{url_for('static', filename='img/'+imgs[len[j]])}}" style="height: 120px; margin-left:25px; margin-right:25px; margin-bottom:20px; width: 250px; border-width:1px;border-color:rgb(95, 29, 29); border-style:solid; border-radius:20px;">
+ </a>
+ {% endfor%}
+</div>
+<br>
+{% endblock contents %}
+{% block javascript%}
+
+{% endblock javascript%}

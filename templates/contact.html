@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block link %}
+<link href="{{url_for('static',filename='contact.css')}}" rel="stylesheet">
+{% endblock %}
+{% block contents %}
+<div style="margin-left: 200px;margin-top: 50px;">
+  <h2 style="margin-left: 120px;font-family: sans-serif;">
+    Contact Us!
+  </h2>
+  <form action="/signup" method="post" style="margin-left: 100px;">
+    <div class="main-form" style="margin-top: 20px; margin-bottom: 20px;">
+      <input type="text" id="name" name="name" required="true" maxlength=24  style="height: 25px; width:300px; text-decoration:none; margin-left:20px; margin-right: 20px;" placeholder="Enter Full Name"></input>
+      <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="true" maxlength=30 style="height: 25px; width:300px; text-decoration:none; margin-left:20px; margin-right: 20px;" placeholder="Enter Your Email-Id"></input>
+    </div>
+    <div class="main-form"style="margin-top: 20px;margin-bottom: 20px;">
+      <input type="number" maxlength=10 id="mobile" name="moblie" required="true" style="height: 25px; width:300px; text-decoration:none; margin-left:20px; margin-right: 20px;" placeholder="Enter Mobile No"></input>
+      <input type="text" id="city" name="city" style="height: 25px; width:300px; text-decoration:none; margin-left:20px; margin-right: 20px;" placeholder="Enter City"></input>
+    </div>
+    <div style="margin-top: 20px;margin-bottom: 20px;">
+      <input type="text" id="comments" name="comments" style="height: 70px; width:650px; text-decoration:none; vertical-align:top; margin-left:20px; margin-right: 20px;"></input>
+    </div>
+    <div style="margin-top: 20px;margin-bottom: 20px;">
+      <input style="height: 35px;color: cornsilk; background-color: rgb(120, 43, 184); width:660px; text-decoration:none; margin-left:20px; margin-right: 20px;" type="submit" value="Submit"></input>
+    </div>
+  </form>
+</div>
+{% endblock %}
