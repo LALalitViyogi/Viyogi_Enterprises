@@ -7,6 +7,8 @@ Contact Page is using MySQL Database to store data entered by users.
 
 It displays the service developed as well deployed by Viyogi Enterprises and operational for public uses.
 There is an project section linked in header, having all active projects links.
+-------------------------------------------------------------------------------------
 
+![alt text](https://github.com/LALalitViyogi/Viyogi_Enterprises/blob/main/viyogi_enterprises.PNG?raw=true)
 
 The Website is hosted on pythonanywhere.com web server.
