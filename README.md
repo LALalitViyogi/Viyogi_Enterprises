@@ -7,10 +7,11 @@ Contact Page is using MySQL Database to store data entered by users.
 
 It displays the service developed as well deployed by Viyogi Enterprises and operational for public uses.
 There is an project section linked in header, having all active projects links.
--- Progressive Images are used
--- Prefetching Implemented
+<br>
+-- Progressive Images are used <br>
+-- Prefetching Implemented <br>
 
-Welcome To Viyogi Enterprises
+Welcome To Viyogi Enterprises <br>
 -------------------------------------------------------------------------------------
 Version 2 (Updated)
 
