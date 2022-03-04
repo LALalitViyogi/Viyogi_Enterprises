@@ -9,8 +9,9 @@ It displays the service developed as well deployed by Viyogi Enterprises and ope
 There is an project section linked in header, having all active projects links.
 
 Welcome To Viyogi Enterprises
-Version 2 (Updated)
 -------------------------------------------------------------------------------------
+Version 2 (Updated)
+
 ![alt text](https://github.com/LALalitViyogi/Viyogi_Enterprises/blob/main/vers2image.PNG?raw=true)
 
 -------------------------------------------------------------------------------------
